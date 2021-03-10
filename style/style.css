@@ -32,5 +32,135 @@ button {
 
 /* ... Your turn! ... */
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--green);
+    margin-top: 0;
+    padding: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    position: fixed;
+    opacity: 0.8;
+    
+  
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li:hover:nth-child(odd) {
+    font-size: 2rem;
+    transform: rotate(10deg);
+    transition: 0.3s;
+  }
+  li:hover:nth-child(even) {
+    font-size: 2rem;
+    transform: rotate(-10deg);
+    transition: 0.3s;
+  }
+  header {
+    text-align: center;
+    display: flex;
+    
+
+  }
+
+   h1, p {
+    color: var(--orange);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+  }
+  .blue-splash{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+ /*SECTION OBSTACLES*/
+
+ #obstacles {
+   background-color: var(--orange);
+   padding: 30px;
+   text-align: center;
+ }
+
+ .obstacles-group, .prizes-group{
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   border-radius: 10px;
+ }
+
+ .obstacles article{
+  background-color: var(--green);
+  border-radius: 2px;
+  text-align: center;
+ }
+
+ .obstacles article:hover {
+  background-color: var(--yellow);
+  color: var(--orange);
+ }
+
+
+ /*SECTION PRIZES*/
+
+#prizes {
+   background-color: var(--green);
+   padding: 30px;
+   text-align: center;
+ }
+ 
+
+ #spacecamp, #keyboard, #heatzone {
+   border: 3px dashed var(--yellow) ;
+   text-align: center;
+ }
+
+ #apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  padding: 30px;
+
+ }
+ .apply {
+  text-align: center;
+ }
+ form {
+   display: flex;
+   flex-direction: column;
+   
+ }
+
+ input {
+   background-color: var(--orange);
+ }
+
+button {
+  background-color: var(--yellow);
+  color: black;
+  border: transparent;
+  border-radius: 2px;
+  padding: 1rem;
+  font-weight: bold;
+  
+}
+
+
+
+  footer{
+    background-color: var(--yellow);
+    color: black;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
 }
